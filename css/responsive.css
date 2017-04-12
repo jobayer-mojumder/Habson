@@ -1,0 +1,498 @@
+/**********************
+
+Responsive.css
+=============
+
+Author:  Gino Aliaj
+Template: Duric - One Page Creative HTML Template
+Version: 1.0
+
+Author URI: gnodesign.com
+***************************/
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries
+--------------------------------------------*/
+
+
+/* ---- Start of max-width 992px CSS ---- */
+
+@media (max-width: 992px) {
+    body.cbp-spmenu-push-toleft:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background: rgba(64, 94, 116, 0.7);
+        z-index: 100;
+        animation: overlay .5s ease;
+    }
+    @-webkit-keyframes overlay {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes overlay {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /**************** 
+		MAIN MENU
+	****************/
+    .navbar-default .navbar-toggle {
+        border: 2px solid #405e74;
+        margin-right: 0;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #405e74;
+    }
+    .navbar-header {
+        float: right !important;
+    }
+    .navbar-toggle {
+        display: block !important;
+        float: right !important;
+    }
+    .navbar-toggle:focus,
+    .navbar-toggle:hover {
+        background: none !important;
+    }
+    .navbar-collapse {
+        display: none;
+    }
+    div#main-nav {
+        max-height: 100% !important;
+        border: 0;
+    }
+    div#main-nav ul.nav.navbar-nav {
+        height: 100vh;
+        padding-top: 30px;
+        margin: 0;
+        width: 100%;
+    }
+    div#main-nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    div#main-nav ul li a {
+        padding: 10px 0;
+    }
+    /**************** 
+		PUSH MENU
+	****************/
+    .collapse {
+        display: block !important;
+    }
+    /* General styles for all menus */
+    .cbp-spmenu {
+        background: #eaeaea;
+        position: fixed;
+        padding: 0;
+        margin: 0 !important;
+        overflow-x: hidden;
+        overflow-y: visible;
+        display: block;
+        visibility: visible !important;
+    }
+    /* Orientation-dependent styles for the content of the menu */
+    .cbp-spmenu-vertical {
+        width: 260px;
+        height: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    .cbp-spmenu-horizontal {
+        width: 100%;
+        height: 150px;
+        left: 0;
+        z-index: 1000;
+        overflow: hidden;
+    }
+    .cbp-spmenu-horizontal h3 {
+        height: 100%;
+        width: 20%;
+        float: left;
+    }
+    .cbp-spmenu-horizontal a {
+        float: left;
+        width: 20%;
+        padding: 0.8em;
+        border-left: 1px solid #258ecd;
+    }
+    /* Vertical menu that slides from the left or right */
+    .cbp-spmenu-left {
+        left: -260px;
+    }
+    .cbp-spmenu-right {
+        right: -260px;
+    }
+    .cbp-spmenu-left.cbp-spmenu-open {
+        left: 0px;
+    }
+    .cbp-spmenu-right.cbp-spmenu-open {
+        right: 0px;
+    }
+    /* Horizontal menu that slides from the top or bottom */
+    .cbp-spmenu-top {
+        top: -150px;
+    }
+    .cbp-spmenu-bottom {
+        bottom: -150px;
+    }
+    .cbp-spmenu-top.cbp-spmenu-open {
+        top: 0px;
+    }
+    .cbp-spmenu-bottom.cbp-spmenu-open {
+        bottom: 0px;
+    }
+    /* Push classes applied to the body */
+    .cbp-spmenu-push {
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+    }
+    .cbp-spmenu-push-toright {
+        left: 260px;
+    }
+    .cbp-spmenu-push-toleft {
+        left: -260px;
+    }
+    /* Transitions */
+    .cbp-spmenu,
+    .cbp-spmenu-push {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    /**************** 
+		SLIDER SECTION
+	****************/
+    .slider-content h2 {
+        font-size: 100px;
+        line-height: 1.5;
+    }
+    .slider-content h3 {
+        font-size: 50px;
+    }
+    .swiper-pagination {
+        left: 95% !important;
+    }
+    /**************** 
+		COMPANYS GOAL SECTION
+	****************/
+    section#company .img-holder {
+        border-radius: 0;
+    }
+    section#company .company-msg {
+        border-radius: 0;
+        margin: 0;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    /**************** 
+		CTA SECTION
+	****************/
+    section#cta {
+        text-align: center
+    }
+    section#cta .btn {
+        margin-top: 20px;
+    }
+    /**************** 
+		SKILLS SECTION
+	****************/
+    section#skills img {
+        height: 400px;
+    }
+    /**************** 
+		TEAM SECTION
+	****************/
+    .team-member.active,
+    .team-member {
+        margin-bottom: 80px;
+        clear: both;
+    }
+    .team-member:last-child {
+        margin-bottom: 0;
+    }
+    .team-member img {
+        display: block;
+        margin: 0 auto;
+    }
+    /**************** 
+		SUBSCRIBE SECTION
+	****************/
+    section#subscribe {
+        text-align: center;
+    }
+    section#subscribe .col-md-4 {
+        margin-bottom: 40px;
+    }
+    /**************** 
+		PRICING SECTION
+	****************/
+    section#pricing .pricing-wrapper {
+        margin-bottom: 80px;
+    }
+    section#pricing .col-md-4:last-child .pricing-wrapper {
+        margin-bottom: 0;
+    }
+    /**************** 
+		TESTIMONIAL SECTION
+	****************/
+    section#testimonial .client-quote {
+        padding: 80px 40px;
+    }
+    section#testimonial .client-image img {
+        display: none;
+    }
+    /**************** 
+		BLOG SECTION
+	****************/
+    .blog-post-featured {
+        margin-top: 30px;
+    }
+    /**************** 
+		CONTACT SECTION
+	****************/
+    .gmaps {
+        height: 500px;
+    }
+    section#contact .col-md-7 {
+        padding: 80px 40px;
+    }
+    /**************** 
+		FOOTER
+	****************/
+    footer#main-footer {
+        text-align: center;
+    }
+    footer#main-footer .social {
+        margin-top: 20px;
+    }
+}
+
+
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 768px CSS ---- */
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ---- End of min-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 769px CSS ---- */
+
+@media all and (max-width: 767px) {
+    /**************** 
+		COUNTUP SECTION
+	****************/
+    section#countup .col-xs-12 {
+        margin-bottom: 40px;
+    }
+    section#countup .col-xs-12:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* ---- End of max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 580px CSS ---- */
+
+@media all and (max-width: 580px) {
+    /**************** 
+		MAIN SLIDER SECTION
+	****************/
+    .slider-content {
+        text-align: center;
+    }
+    .slider-content .pull-left {
+        float: none !important;
+    }
+    .slider-content h2 {
+        line-height: 1;
+    }
+    .slider-content h3 {
+        font-size: 36px;
+        padding-left: 0;
+    }
+    section.circle:after {
+        display: none;
+    }
+    /**************** 
+		COMPANY GOAL SECTION
+	****************/
+    section#company .img-holder img {
+        height: 100%;
+        object-fit: cover;
+    }
+    /**************** 
+		GALLERY SECTION
+	****************/
+    ul.gallery-sorting li {
+        margin-bottom: 50px;
+    }
+    /**************** 
+		TEAM SECTION
+	****************/
+    section#team:after {
+        display: none;
+    }
+    /**************** 
+		TESTIMONIAL SECTION
+	****************/
+    section#testimonial .testimonial-wrapper:after {
+        height: 58%;
+    }
+    /**************** 
+		BLOG SECTION
+	****************/
+    .blog-post-featured {
+        height: 500px;
+    }
+}
+
+
+/* ---- End of max-width 580px CSS ---- */
+
+
+/* ---- Start of max-width 480px CSS ---- */
+
+@media all and (max-width: 480px) {
+    /**************** 
+		GALLERY SECTION
+	****************/
+    .gallery-items li.col-xs-6.shuffle-item {
+        width: 100%;
+    }
+}
+
+
+/* ---- End of max-width 480px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+
+@media all and (max-width: 420px) {
+    /**************** 
+		SKILLS SECTION
+	****************/
+    .skillbar {
+        width: 100%;
+    }
+    /**************** 
+		TEAM SECTION
+	****************/
+    .team-member img {
+        width: 100%;
+    }
+    /**************** 
+		BLOG SECTION
+	****************/
+    .blog-post .post-info {
+        padding: 0 30px;
+    }
+    .blog-post-featured .post-info {
+        padding: 0 30px;
+    }
+}
+
+
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+
+@media all and (max-width: 380px) {
+    .pre-title {
+        font-size: 55px;
+    }
+    /**************** 
+		MAIN SLIDER SECTION
+	****************/
+    .swiper-pagination {
+        display: none;
+    }
+    .slider-content .btn:first-child {
+        margin: 20px 0;
+    }
+    /**************** 
+		ABOUT SECTION
+	****************/
+    section#about .about-desc {
+        margin-bottom: 40px;
+    }
+    section#about .about-desc:last-child {
+        margin-bottom: 0;
+    }
+    /**************** 
+		TESTIMONIAL SECTION
+	****************/
+    section#testimonial .testimonial-wrapper:after {
+        height: 65%;
+    }
+    /**************** 
+		PARTNERS SECTION
+	****************/
+    #partners img {
+        width: 130px;
+    }
+}
+
+
+/* ---- End of max-width 380px CSS ---- */
+
+
+/* ---- Start of max-width 340px CSS ---- */
+
+@media all and (max-width: 340px) {
+    /**************** 
+		SUBSCRIBE SECTION
+	****************/
+    section#subscribe form input.form-control {
+        width: 100% !important;
+    }
+    section#subscribe .btn {
+        position: inherit;
+        margin-top: 20px;
+    }
+}
+
+
+/* ---- End of max-width 340px CSS ---- */
+
+
+/* ---- Start of max-height 420px CSS ---- */
+
+@media screen and (max-height: 420px) {
+    .fullscreen {
+        height: 550px;
+    }
+    section.circle:after {
+        display: none;
+    }
+    ul.gallery-sorting li {
+        margin-bottom: 40px;
+    }
+}
